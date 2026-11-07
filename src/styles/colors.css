@@ -1,0 +1,13 @@
+:root{
+--blush-200:#f3e3db;--blush-100:#fbf3ec;--blush-300:#ead3c8;
+--burgundy-900:#3a1822;--burgundy-700:#7a3b3f;
+--rose-500:#a86b6b;--foil-500:#b98a6a;
+--dusk-900:#1e0f16;--dusk-800:#2a1720;--dusk-700:#3a2129;--dusk-ink:#f6e7df;--dusk-accent:#e0b3a3;
+--surface-ground:var(--blush-200);--surface-panel:var(--blush-100);--surface-sunken:var(--blush-300);
+--text-ink:var(--burgundy-900);--text-accent:var(--burgundy-700);--text-muted:#5e3640;--text-on-accent:var(--blush-100);
+--border-hairline:rgba(58,24,34,.18);--border-rule:rgba(122,59,63,.45);--border-strong:var(--burgundy-700);
+--decor-rose:var(--rose-500);--decor-foil:var(--foil-500);
+--seal-wax:var(--burgundy-700);--seal-wax-deep:#5c2a2f;
+--action-bg:var(--burgundy-900);--action-fg:var(--blush-100);--action-bg-press:#2a1018;
+--action-ghost-fg:var(--burgundy-900);--action-ghost-border:var(--border-strong);
+}

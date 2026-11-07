@@ -1,0 +1,45 @@
+/* Page shell + section themes — ported from ui_kits/invitation/index.html */
+html,body{margin:0;height:100%;background:var(--surface-sunken);overscroll-behavior:none}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overflow-x:hidden}
+
+/* Desktop: phone-sized frame. Phones/tablets/landscape: full-bleed. */
+.nk-stage{height:100dvh;display:grid;place-items:center}
+.nk-phone{position:relative;width:390px;height:min(844px,calc(100dvh - 48px));overflow:hidden;border-radius:36px;box-shadow:0 30px 60px -30px rgba(58,24,34,.5),0 0 0 1px var(--border-hairline)}
+@media (max-width:520px),(pointer:coarse) and (max-width:1024px),(max-height:560px){
+  .nk-stage{display:block}
+  .nk-phone{width:100%;height:100dvh;border-radius:0;box-shadow:none}
+}
+.nk-phone ::-webkit-scrollbar{display:none}
+
+.nk-paper{background-color:var(--surface-ground);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .15 0 0 0 0 .18 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* Ivory paper + olive ink for every section after the home video */
+.nk-green{
+  --text-ink:#3b4426;--text-accent:#6f7a45;--text-muted:#6b6648;--decor-rose:#7f8b5c;
+  --border-rule:rgba(111,122,69,.4);--border-hairline:rgba(111,122,69,.22);--surface-panel:rgba(255,252,242,.7);
+  --text-script-shadow:0 1px 0 rgba(255,253,245,.8);
+  --action-bg:#56653a;--action-bg-press:#46532d;--action-fg:#fbf6ea;
+  --action-ghost-fg:#3b4426;--action-ghost-border:#6f7a45;--surface-sunken:rgba(111,122,69,.12);
+  --action-ghost-hover-bg:linear-gradient(135deg,#6f7a45,#56653a);--action-ghost-hover-fg:#fbf6ea;--action-ghost-hover-shadow:0 8px 20px rgba(70,83,45,.3);
+  color:var(--text-ink);background-color:#f1e8d8;
+  background-image:radial-gradient(110% 55% at 50% 0%,#fbf6ec 0%,rgba(251,246,236,0) 70%),linear-gradient(180deg,#f6efe2 0%,#eee3cf 55%,#e9dcc4 100%);
+}
+
+a{color:var(--text-accent)}a:hover{color:var(--text-ink)}
+
+/* Keyframes (were inline <style> tags in the prototype) */
+@keyframes nkHeartPop{0%{transform:scale(1)}35%{transform:scale(1.06)}100%{transform:scale(1)}}
+@keyframes lxRing{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.9);opacity:0}}
+@keyframes lxFlip{0%{transform:rotateX(-90deg);opacity:.3}60%{opacity:1}100%{transform:rotateX(0)}}
+@keyframes lxBlink{50%{opacity:.25}}
+@keyframes lxCue{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(6px);opacity:1}}
+@keyframes fxBreath{0%,100%{opacity:.35;transform:translate(-50%,-50%) scale(.96)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.04)}}
+@keyframes fxTwinkle{0%,100%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(0)}45%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(45deg)}60%{opacity:0;transform:translate(-50%,-50%) scale(.3) rotate(70deg)}}
+@keyframes fxSweep{0%{transform:translateX(-120%) skewX(-20deg);opacity:0}20%{opacity:1}100%{transform:translateX(260%) skewX(-20deg);opacity:0}}
+@keyframes fxFlash{0%{opacity:0;transform:translate(-50%,-50%) scale(.4)}35%{opacity:1}100%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}}
+@keyframes fxGlint{0%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(0)}40%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(45deg)}100%{opacity:0;transform:translate(-50%,-50%) scale(.3) rotate(90deg)}}
+
+@media (prefers-reduced-motion:reduce){
+  .nk-anim{animation:none!important}
+}

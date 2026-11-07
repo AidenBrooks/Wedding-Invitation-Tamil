@@ -1,0 +1,4 @@
+.nk-root{background:var(--surface-ground);color:var(--text-ink);font-family:var(--font-serif);font-size:var(--fs-body);line-height:var(--lh-body);-webkit-font-smoothing:antialiased}
+.nk-root :lang(ta),.nk-ta{font-family:var(--font-tamil);line-height:var(--lh-tamil)}
+.nk-root a{color:var(--text-accent);text-decoration-thickness:1px;text-underline-offset:3px}
+.nk-root a:hover{color:var(--text-ink)}

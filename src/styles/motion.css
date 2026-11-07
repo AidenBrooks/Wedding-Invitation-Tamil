@@ -1,0 +1,14 @@
+:root{
+--ease-panels:cubic-bezier(0.65,0,0.35,1); /* @kind other */
+--ease-out:cubic-bezier(0.22,1,0.36,1); /* @kind other */
+--dur-seal:500ms; /* @kind other */
+--dur-panels:900ms; /* @kind other */
+--dur-fade:400ms; /* @kind other */
+--dur-press:120ms; /* @kind other */
+}
+@media (prefers-reduced-motion:reduce){:root{
+--dur-seal:1ms; /* @kind other */
+--dur-panels:1ms; /* @kind other */
+--dur-fade:1ms; /* @kind other */
+--dur-press:1ms; /* @kind other */
+}}

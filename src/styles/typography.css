@@ -1,0 +1,17 @@
+:root{
+--font-script:"Pinyon Script",cursive;
+--font-serif:"Cormorant Garamond",Georgia,serif;
+--font-numeral:"Playfair Display",Georgia,serif;
+--font-tamil:"Noto Serif Tamil",serif;
+--font-arabic:"Aref Ruqaa",serif;
+--fs-bismillah:26px;--fs-script-xl:52px;--fs-script-lg:40px;--fs-script-md:30px;
+--fs-numeral-xl:56px;--fs-numeral-lg:34px;
+--fs-body-lg:19px;--fs-body:17px;--fs-small:14px;--fs-caps:12px;
+--fs-tamil-body:15px;--fs-tamil-small:13px;
+--lh-script:1.1; /* @kind font */
+--lh-body:1.5; /* @kind font */
+--lh-tamil:1.75; /* @kind font */
+
+--tracking-caps:.22em;--tracking-wide:.08em;
+--text-script-shadow:1px 1px 0 var(--decor-foil);
+}
