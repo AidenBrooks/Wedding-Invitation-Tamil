@@ -48,7 +48,7 @@ export function HeartDate({ c, ta, shown }) {
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 2, width: 190, textAlign: "center", lineHeight: 1.2, transform: "translateY(22px)", color: "var(--text-ink)" }}>
       <div style={{ ...step(0), fontFamily: f, fontStyle: ta ? "normal" : "italic", fontSize: ta ? 12 : 15, color: "var(--text-accent)" }}>{c.invited}</div>
       <div style={{ ...step(1), fontFamily: f, fontWeight: 600, fontSize: ta ? 17 : 21, lineHeight: 1.25, marginTop: 4 }}>{c.dateLong}</div>
-      <div style={{ ...step(2), display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontFamily: f, fontSize: ta ? 13 : 15, marginTop: 2 }}><span>{c.weekday}</span><span aria-hidden="true" style={{ width: 4, height: 4, borderRadius: "50%", background: "var(--text-accent)" }}></span><span>{c.time}</span></div>
+      <div style={{ ...step(2), display: "flex", alignItems: "center", justifyContent: "center", gap: ta ? 6 : 8, fontFamily: f, fontSize: ta ? 12 : 15, marginTop: 2, whiteSpace: "nowrap" }}><span>{c.weekday}</span><span aria-hidden="true" style={{ width: 4, height: 4, borderRadius: "50%", background: "var(--text-accent)" }}></span><span>{c.time}</span></div>
       <div style={{ ...step(3), fontFamily: f, fontStyle: ta ? "normal" : "italic", fontSize: ta ? 11 : 13, color: "var(--text-muted)", marginTop: 4 }}>{c.hijri}</div>
     </div>
   );

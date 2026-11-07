@@ -6,11 +6,11 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ahnaf-sulaiha-nikkah-20261213@absze
 DTSTAMP:20261107T000000Z
-DTSTART:20261213T063000Z
-DTEND:20261213T093000Z
+DTSTART:20261213T060000Z
+DTEND:20261213T063000Z
 SUMMARY:Nikkah of Mohamed Ahnaf & Sulaiha Faslin
 LOCATION:Sulthar Habeebullah Mahal\, Ponnagoundanur Road\, Pallapatti - 639 207
-DESCRIPTION:Nikkah at 12:00 PM. With the blessings of Allah\, we invite you to share in the joy of our Nikkah.
+DESCRIPTION:Nikkah from 11:30 AM to 12 PM. With the blessings of Allah\, we invite you to share in the joy of our Nikkah.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Nikkah tomorrow
