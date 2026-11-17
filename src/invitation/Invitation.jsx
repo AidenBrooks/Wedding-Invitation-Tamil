@@ -111,7 +111,10 @@ function Invitation({ lang, setLang, opened }) {
             <Reveal root={sc}><ScriptTitle ta={ta} size={36}>{c.presence}</ScriptTitle></Reveal>
             <Reveal root={sc} delay={80}><TinyHeart /></Reveal>
             {PRESENCE[lang].map((p, i) => <Reveal key={p} root={sc} delay={140 + i * 90}><div lang={lang} style={{ fontFamily: body, fontSize: ta ? 15 : 18, lineHeight: 1.35 }}>{p}</div></Reveal>)}
-            <div style={{ fontFamily: body, fontSize: 11, letterSpacing: ta ? 0 : ".12em", color: "var(--text-muted)" }}>{c.credit}</div>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 3, fontFamily: body, fontSize: 11, letterSpacing: ta ? 0 : ".12em", color: "var(--text-accent)", fontWeight: 700 }}>
+              <span>{c.credit}</span>
+              <a href="tel:7092984527" style={{ color: "var(--text-ink)", fontSize: 12, fontWeight: 700, letterSpacing: ".08em", textDecoration: "none" }}>7092984527</a>
+            </div>
           </Block>
         </div>
       </div>
