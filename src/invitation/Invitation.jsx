@@ -135,7 +135,7 @@ function linkLang() {
 
 export function InvitationApp() {
   const [fixed] = React.useState(linkLang);
-  const [lang, setLangS] = React.useState(() => fixed || (store.get("nk-lang") === "ta" ? "ta" : "en"));
+  const [lang, setLangS] = React.useState(() => fixed || (store.get("nk-lang") === "en" ? "en" : "ta"));
   const [opened, setOpened] = React.useState(false);
   const setLang = fixed ? null : (l) => { store.set("nk-lang", l); setLangS(l); };
   React.useEffect(() => { document.documentElement.lang = lang; }, [lang]);
