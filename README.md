@@ -1,7 +1,7 @@
-# Ahnaf & Sulaiha · Nikkah invitation (Tamil only)
+# Ahnaf & Sulaiha · Nikkah invitation
 
-Tamil-only edition of the invitation: no language switch. `.env.production` sets `VITE_LANG=ta`; delete it to get the bilingual site back.
-Import into Vercel as-is: the settings are in `vercel.json`.
+Bilingual Tamil and English invitation. Tamil opens by default; guests can switch to English using the language control. Their selected language is remembered for future visits.
+Import into Vercel using the settings in `vercel.json`.
 
 
 Production build of the Claude Design prototype `project/ui_kits/invitation/index.html`.
